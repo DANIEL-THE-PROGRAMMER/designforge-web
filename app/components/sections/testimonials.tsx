@@ -3,21 +3,23 @@ import Image from "next/image";
 export const Testimonials = () => {
   return (
     <>
-      <div className="flex flex-col items-center">
-        <h3 className="text-[#073141] uppercase text-[24px] font-extrabold tracking-[3.6px] font-manrope">
-          testımonıals
-        </h3>
-        <p className="text-[20px] text-[#073141] font-inter mt-[20px] mb-[40px] md:w-[1000px] text-center">
-          At DesignForge, we take pride in the success and satisfaction of our
-          members. But don{"'"}t just take our word for it—hear what our
-          community has to say about their experience with DesignForge.
-        </p>
+      <div className="flex flex-col">
+        <div className="flex flex-col items-center">
+          <h3 className="text-[#073141] uppercase text-[24px] font-extrabold tracking-[3.6px] font-manrope">
+            testımonıals
+          </h3>
+          <p className="text-[20px] text-[#073141] font-inter mt-[20px] mb-[40px] md:w-[1000px] text-center">
+            At DesignForge, we take pride in the success and satisfaction of our
+            members. But don{"'"}t just take our word for it—hear what our
+            community has to say about their experience with DesignForge.
+          </p>
+        </div>
         <div className="flex gap-[40px] overflow-hidden">
-          <div className="flex gap-[40px]">
+          <div className="flex gap-[40px] shrink-0">
             {Testimonies.map((testimony, index) => {
               return (
                 <div
-                  className="p-[40px] flex gap-[40px] box items-center basis-[753px] shrink-0"
+                  className="p-[40px] flex gap-[40px] box items-center basis-[753px]"
                   key={index}
                 >
                   <Image
@@ -41,7 +43,6 @@ export const Testimonials = () => {
               );
             })}
           </div>
-         
         </div>
       </div>
     </>
@@ -61,5 +62,4 @@ const Testimonies = [
     context:
       "DesignForge has been an invaluable resource for me as a digital artist. The tutorials are well-explained and easy to follow, and the community is incredibly supportive. I've learned so much and grown as an artist since joining DesignForge. Highly recommended!",
   },
-  
 ];

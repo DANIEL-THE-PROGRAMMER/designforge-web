@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import { Nav } from "./components/view/nav";
+import { Footer } from "./components/view/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${manrope.variable}`}>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
