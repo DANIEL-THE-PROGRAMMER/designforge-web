@@ -10,3 +10,17 @@ body {
   border-radius: 0px 30px;
   background: rgba(29, 114, 147, 0.1);
 }
+
+.trustmarquwe{
+  animation: tmarque 10s linear 2s infinite forwards;
+}
+
+
+@keyframes tmarque {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
